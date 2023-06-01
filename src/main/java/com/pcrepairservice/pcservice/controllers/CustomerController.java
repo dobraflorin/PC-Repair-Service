@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class CustomerController {
-    private final CustomerService customerService;
+    public final CustomerService customerService;
 
     @Autowired
     public CustomerController(CustomerService customerService) {
