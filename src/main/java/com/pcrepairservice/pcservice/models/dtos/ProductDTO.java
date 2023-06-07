@@ -1,13 +1,11 @@
 package com.pcrepairservice.pcservice.models.dtos;
 
 import lombok.Data;
-
-import java.io.Serializable;
 @Data
-public class ProductDTO implements Serializable {
+public class ProductDTO {
     private long id;
     private String model;
-    private String price;
+    private Double price;
     private String problem;
     private String solution;
 
