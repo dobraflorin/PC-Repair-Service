@@ -21,8 +21,9 @@ public class CustomerController {
     public CustomerController(CustomerService customerService) {
         this.customerService = customerService;
     }
+
     @PostMapping
-    public ResponseEntity<CustomerDTO> customerDTOResponseEntity(@RequestBody @Validated CustomerDTO customerDTO){
+    public ResponseEntity<CustomerDTO> customerDTOResponseEntity(@RequestBody @Validated CustomerDTO customerDTO) {
         return ResponseEntity.ok(customerService.createCustomer(customerDTO));
     }
 
