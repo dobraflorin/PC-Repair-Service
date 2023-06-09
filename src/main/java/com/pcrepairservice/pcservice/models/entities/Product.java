@@ -5,8 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
@@ -26,6 +24,4 @@ public class Product {
     private String problem;
     @Column(name = "solution")
     private String solution;
-    @ManyToMany(mappedBy = "products")
-    private Set<Customer> customers;
 }
