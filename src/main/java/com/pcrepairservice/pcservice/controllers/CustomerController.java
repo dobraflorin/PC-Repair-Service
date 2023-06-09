@@ -26,5 +26,4 @@ public class CustomerController {
     public ResponseEntity<CustomerDTO> customerDTOResponseEntity(@RequestBody @Validated CustomerDTO customerDTO) {
         return ResponseEntity.ok(customerService.createCustomer(customerDTO));
     }
-
 }

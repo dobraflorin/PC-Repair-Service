@@ -18,10 +18,10 @@ public class Product {
     private Long id;
     @Column(name = "model")
     private String model;
-    @Column(name = "price")
-    private Double price;
     @Column(name = "problem")
     private String problem;
     @Column(name = "solution")
     private String solution;
+    @Column(name = "price")
+    private Double price;
 }
